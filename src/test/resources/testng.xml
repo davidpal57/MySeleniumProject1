@@ -19,9 +19,9 @@
         </classes>
     </test>
 
-<!--    <test name="dropdown">-->
-<!--        <classes>-->
-<!--            <class name="com.herokuapp.SelectByDropdownTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <test name="dropdown">
+        <classes>
+            <class name="com.herokuapp.SelectByDropdownTest"/>
+        </classes>
+    </test>
 </suite>

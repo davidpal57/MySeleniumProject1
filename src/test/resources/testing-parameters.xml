@@ -38,16 +38,16 @@
         </classes>
     </test>
 
-<!--    <test name="SelectByDropdownTest">-->
-<!--        <classes>-->
-<!--            <class name="com.herokuapp.SelectByDropdownTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <test name="SelectByDropdownTest">
+        <classes>
+            <class name="com.herokuapp.SelectByDropdownTest"/>
+        </classes>
+    </test>
 
-<!--    <test name="CheckboxesTest">-->
-<!--        <classes>-->
-<!--            <class name="com.herokuapp.CheckboxesTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <test name="CheckboxesTest">
+        <classes>
+            <class name="com.herokuapp.CheckboxesTest"/>
+        </classes>
+    </test>
 </suite>
 
