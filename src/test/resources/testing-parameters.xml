@@ -2,51 +2,76 @@
 
 <suite name="Suite2" verbose="1">
     <parameter name="browserP" value="none"/>
-    <test name="Invalid username">
-        <parameter name="usernameP" value="wronguser"/>
-        <parameter name="passwordP" value="SuperSecretPassword!"/>
-        <parameter name="errorP" value="Your username is invalid!"/>
-        <classes>
-            <class name="com.herokuapp.NegativeLoginTest"/>
-        </classes>
-    </test>
+<!--    <test name="Invalid username">-->
+<!--        <parameter name="usernameP" value="wronguser"/>-->
+<!--        <parameter name="passwordP" value="SuperSecretPassword!"/>-->
+<!--        <parameter name="errorP" value="Your username is invalid!"/>-->
+<!--        <classes>-->
+<!--            <class name="com.herokuapp.NegativeLoginTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="Invalid password">
-        <parameter name="usernameP" value="tomsmith"/>
-        <parameter name="passwordP" value="wrongpassword"/>
-        <parameter name="errorP" value="Your password is invalid!"/>
-        <classes>
-            <class name="com.herokuapp.NegativeLoginTest"/>
-        </classes>
-    </test>
+<!--    <test name="Invalid password">-->
+<!--        <parameter name="usernameP" value="tomsmith"/>-->
+<!--        <parameter name="passwordP" value="wrongpassword"/>-->
+<!--        <parameter name="errorP" value="Your password is invalid!"/>-->
+<!--        <classes>-->
+<!--            <class name="com.herokuapp.NegativeLoginTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="Login">
-        <parameter name="usernameP" value="tomsmith"/>
-        <parameter name="passwordP" value="SuperSecretPassword!"/>
-        <parameter name="subHeaderP" value="You logged into a secure area!"/>
-        <classes>
-            <class name="com.herokuapp.LoginTest"/>
-        </classes>
-    </test>
+<!--    <test name="Login">-->
+<!--        <parameter name="usernameP" value="tomsmith"/>-->
+<!--        <parameter name="passwordP" value="SuperSecretPassword!"/>-->
+<!--        <parameter name="subHeaderP" value="You logged into a secure area!"/>-->
+<!--        <classes>-->
+<!--            <class name="com.herokuapp.LoginTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="Logout">
-        <parameter name="usernameP" value="tomsmith"/>
-        <parameter name="passwordP" value="SuperSecretPassword!"/>
-        <parameter name="flashSuccessP" value="You logged out of the secure area!"/>
-        <classes>
-            <class name="com.herokuapp.LogoutTest"/>
-        </classes>
-    </test>
+<!--    <test name="Logout">-->
+<!--        <parameter name="usernameP" value="tomsmith"/>-->
+<!--        <parameter name="passwordP" value="SuperSecretPassword!"/>-->
+<!--        <parameter name="flashSuccessP" value="You logged out of the secure area!"/>-->
+<!--        <classes>-->
+<!--            <class name="com.herokuapp.LogoutTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="SelectByDropdownTest">
-        <classes>
-            <class name="com.herokuapp.SelectByDropdownTest"/>
-        </classes>
-    </test>
+<!--    <test name="SelectByDropdownTest">-->
+<!--        <classes>-->
+<!--            <class name="com.herokuapp.SelectByDropdownTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
-    <test name="CheckboxesTest">
+<!--    <test name="CheckboxesTest">-->
+<!--        <classes>-->
+<!--            <class name="com.herokuapp.CheckboxesTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="CheckboxTest">-->
+<!--        <parameter name="resultP1" value="private"/>-->
+<!--        <classes>-->
+<!--            <class name="com.demoqa.CheckboxTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="RadioButtonTest">-->
+<!--        <parameter name="resultP2" value="Impressive"/>-->
+<!--        <classes>-->
+<!--            <class name="com.demoqa.RadioButtonTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <test name="TestBoxTest">
+        <parameter name="usernameP" value="Enescu Popescu"/>
+        <parameter name="emailP" value="enescupop@yahoo.com"/>
+        <parameter name="currentAddressP" value="unknown"/>
+        <parameter name="permanentAddressP" value="not found"/>
+        <parameter name="resultP" value="not"/>
         <classes>
-            <class name="com.herokuapp.CheckboxesTest"/>
+            <class name="com.demoqa.TestboxTest"/>
         </classes>
     </test>
 </suite>

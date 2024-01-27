@@ -1,21 +1,19 @@
 package com.demoqa;
-//tema demoqa.com a
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class CheckboxTest {
+//tema demoqa.com a
+public class RadioButtonTest {
     WebDriver driver;
     String url = "https://demoqa.com/elements";
     @Parameters({"browserP"})
@@ -38,36 +36,18 @@ public class CheckboxTest {
         driver.manage().window().maximize();
     }
     @Test
-    @Parameters({"resultP1"})
-    public void checkbox(String result1){
-//        WebElement elements = driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div/div[1]"));
-//        elements.click();
-//        sleep(2000);
-        WebElement menuCheckbox = driver.findElement(By.id("item-1"));
-        menuCheckbox.click();
+    @Parameters({"resultP2"})
+    public void radioButton(String result){
+        WebElement menuRadioButton = driver.findElement(By.id("item-2"));
+        menuRadioButton.click();
         sleep(2000);
-//        WebElement checkbox1 = driver.findElement(By.className("rct-checkbox"));
-//        WebElement checkbox1 = driver.findElement(By.xpath("//*[@id=\"tree-node\"]/ol/li/span/label/span[1]"));
-//        checkbox1.click();
-//        sleep(2000);
-        WebElement expandAll = driver.findElement(By.className("rct-option-expand-all"));
-        expandAll.click();
-
-//        By loadingImage = By.id("loading image ID");
-//
-//        WebDriverWait wait = new WebDriverWait(driver, 2000);
-//
-//        wait.until(ExpectedConditions.invisibilityOfElementLocated(loadingImage));
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollBy(0,250)", "");
-
-        WebElement checkbox4 = driver.findElement(By.xpath("//*[@id=\"tree-node\"]/ol/li/ol/li[2]/ol/li[2]/ol/li[2]/span/label/span[1]"));
-        checkbox4.click();
-        WebElement resultMessage = driver.findElement(By.id("result"));
-        Assert.assertTrue(resultMessage.getText().contains(result1));
-
-
-
+        WebElement yesRadioButton = driver.findElement(By.xpath("//label[@for='yesRadio']"));
+        yesRadioButton.click();
+        WebElement impressiveRadioButton = driver.findElement(By.xpath("//label[@for='impressiveRadio']"));
+        impressiveRadioButton.click();
+        System.out.println(result);
+        WebElement textSuccess = driver.findElement(By.className("mt-3"));
+        Assert.assertTrue(textSuccess.getText().contains(result));
     }
     @AfterTest(alwaysRun = true)
     public void teardown(){
