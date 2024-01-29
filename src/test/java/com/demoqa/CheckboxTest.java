@@ -36,6 +36,10 @@ public class CheckboxTest {
         }
         driver.get(url);
         driver.manage().window().maximize();
+        WebElement cookieConsent = driver.findElement(By.className("fc-cta-consent"));
+        if (cookieConsent.isDisplayed()){
+            cookieConsent.click();
+        }
     }
     @Test
     @Parameters({"resultP1"})

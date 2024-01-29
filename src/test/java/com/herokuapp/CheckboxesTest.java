@@ -35,6 +35,7 @@ public class CheckboxesTest {
         }
         driver.get(url);
         driver.manage().window().maximize();
+
     }
 
     @Test

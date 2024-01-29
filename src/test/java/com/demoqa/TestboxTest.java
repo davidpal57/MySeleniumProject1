@@ -35,7 +35,11 @@ public class TestboxTest {
                 driver = new ChromeDriver();
         }
         driver.get(url);
-        driver.manage().window().maximize();
+        driver.manage().window().fullscreen();
+        WebElement cookieConsent = driver.findElement(By.className("fc-cta-consent"));
+        if (cookieConsent.isDisplayed()) {
+            cookieConsent.click();
+        }
     }
 
     @Test
