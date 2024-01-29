@@ -64,14 +64,20 @@
 <!--        </classes>-->
 <!--    </test>-->
 
-    <test name="TestBoxTest">
-        <parameter name="usernameP" value="Enescu Popescu"/>
-        <parameter name="emailP" value="enescupop@yahoo.com"/>
-        <parameter name="currentAddressP" value="unknown"/>
-        <parameter name="permanentAddressP" value="not found"/>
-        <parameter name="resultP" value="not"/>
+<!--    <test name="TestBoxTest">-->
+<!--        <parameter name="usernameP" value="Enescu Popescu"/>-->
+<!--        <parameter name="emailP" value="enescupop@yahoo.com"/>-->
+<!--        <parameter name="currentAddressP" value="unknown"/>-->
+<!--        <parameter name="permanentAddressP" value="not found"/>-->
+<!--        <parameter name="resultP" value="not"/>-->
+<!--        <classes>-->
+<!--            <class name="com.demoqa.TestboxTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <test name="KeyPressTest">
         <classes>
-            <class name="com.demoqa.TestboxTest"/>
+            <class name="com.herokuapp.KeyPressTest"/>
         </classes>
     </test>
 </suite>
